@@ -7,7 +7,7 @@ and you can save sessions for long as you want! for example 1 year!!!
 
 **remember me** is secure but it's not prevent session hijacking so for more security you need to implement it for yourself
 
-##Installation
+## Installation
 
 ### Step 1 : add package with composer
 `composer require ghalambaz/rememberme`
@@ -46,7 +46,7 @@ CREATE TABLE `tbl_acl_sessions`  (
 
 ## Usage
 
-##step 1 : create a Properties Object
+## step 1 : create a Properties Object
 
 ```php
 //initialize Properties Object
@@ -57,7 +57,7 @@ $properties->setColUsername("username"); // column that save username,email or a
 ```
 > you need to access this object globally in your project
 
-##step 2 : Changing PHP Session Handler
+## step 2 : Changing PHP Session Handler
 ```php
 session_set_save_handler(new \RememberMe\RememberMeSessionHandler($properties));
 session_start(); //starting session - check for duplication!
@@ -65,9 +65,9 @@ $_SESSION['active'] = time();
 ```
 >please put step2 in the first line of your code
 
-###Usage Examples        
+### Usage Examples        
 
-#####how to login users?
+##### how to login users?
 after you logged in user with username and password you need to persist session data .
  so you should need to run **persist** function
 
@@ -85,7 +85,7 @@ function persist(\RememberMe\Properties $properties,$username)
 }
 ```
 
-#####how to check that user is login now or 1 year later?
+##### how to check that user is login now or 1 year later?
 
 ```php
 ‍‍‍‍//example of check that is user is logged in or not (need to login again)
@@ -103,7 +103,7 @@ function is_loggedin($properties)
     }
 }
 ```
-#####how to logout?
+##### how to logout?
 ```php
 ‍//example of logout function structure 
 function logout($properties)
