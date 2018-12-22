@@ -2,7 +2,7 @@
 **users can stay login to your website for how long as you want** 
 
 
-**remember me** help you to have remember me functionality for login and users does not need to login every 20 or 30 minute after inactivity ,because it will save your session to database
+**remember me** help you to have remember me functionality for login and users does not need to login every 20 or 30 minute after inactivity, because it will save your session to database
 and you can save sessions for long as you want! for example 1 year!!!
 
 **remember me** is secure but it's not prevent session hijacking so for more security you need to implement it for yourself
