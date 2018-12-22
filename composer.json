@@ -2,7 +2,7 @@
     "name": "ghalambaz/remember-me",
     "type": "application",
     "description": "RememberMe is a PHP library for persist sessions and remember users without need to login again in period of time!",
-    "keywords": ["remember,persistence,session,login,handler"],
+    "keywords": ["remember me,persistence,session,login,session handler"],
     "homepage": "https://yanagroup.ir",
     "license": "MIT",
     "authors": [
