@@ -13,8 +13,7 @@
     ],
     "require": {
         "php": ">=5.5.0",
-        "ext-pdo": "*",
-        "ext-openssl": "*"
+        "ext-pdo": "*"
     },
     "autoload": {
         "psr-4": {
