@@ -51,7 +51,7 @@ CREATE TABLE `tbl_acl_sessions`  (
 ```php
 //initialize Properties Object
 $properties = new \RememberMe\Properties();
-$properties->setDb("root","password","doit","localhost"); //your database access info
+$properties->setDb("user","password","db_name","host"); //your database access info
 $properties->setTableUsers("tbl_users"); // table name that you already save your users data
 $properties->setColUsername("username"); // column that save username,email or any id of your users in tbl_users
 ```
