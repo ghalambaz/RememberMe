@@ -1,0 +1,24 @@
+{
+    "name": "ghalambaz/remember-me",
+    "type": "application",
+    "description": "RememberMe is a PHP library for persist sessions and remember users without need to login again in period of time!",
+    "keywords": ["remember,persistence,session,login,handler"],
+    "homepage": "https://yanagroup.ir",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ali Ghalambaz",
+            "email": "a.ghalambaz@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "ext-pdo": "*",
+        "ext-openssl": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "RememberMe\\": "RememberMe/"
+        }
+    }
+}
