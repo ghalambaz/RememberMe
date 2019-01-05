@@ -1,5 +1,5 @@
 ## Remember Me - Session Persistence (In Just 2 Easy Steps!)
-**users can stay login to your website for how long as you want** 
+**users can stay logged in to your website for how long as you want** 
 
 
 **remember me** help you to have remember me functionality for login and users does not need to login every 20 or 30 minute after inactivity, because it will save your session to database
