@@ -5,7 +5,6 @@
 **remember me** help you to have remember me functionality for login and users does not need to login every 20 or 30 minute after inactivity, because it will save your session to database
 and you can save sessions for long as you want! for example 1 year!!!
 
-**remember me** is secure but it's not prevent session hijacking so for more security you need to implement it for yourself
 
 ## Installation
 
@@ -46,7 +45,7 @@ CREATE TABLE `tbl_acl_sessions`  (
 
 ## Usage
 
-## step 1 : create a Properties Object
+## step 1 : initialize Properties Object
 
 ```php
 //initialize Properties Object
