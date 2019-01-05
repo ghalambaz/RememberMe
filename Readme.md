@@ -1,4 +1,4 @@
-## Remember Me - Session Persistence
+## Remember Me - Session Persistence (In Just 2 Easy Steps!)
 **users can stay login to your website for how long as you want** 
 
 
