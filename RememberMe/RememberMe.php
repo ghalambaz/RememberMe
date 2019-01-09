@@ -318,6 +318,7 @@ class RememberMe extends ModelAbstract
     protected function parseCookie()
     {
         // Separate the username and submitted token
+        if(empty($_COOKIE[$this->properties->getCookie()])) return false;
         $parts = explode('|', $_COOKIE[$this->properties->getCookie()]);
 
         if (count($parts) > 1) {
