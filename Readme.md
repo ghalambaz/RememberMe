@@ -9,7 +9,7 @@ and you can save sessions for long as you want! for example 1 year!!!
 ## Installation
 
 ### Step 1 : add package with composer
-`composer require ghalambaz/rememberme`
+`composer require ghalambaz/remember-me`
 
 ### Step 2 : create database tables
 
