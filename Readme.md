@@ -36,6 +36,23 @@ CREATE TABLE `tbl_acl_sessions`  (
   PRIMARY KEY (`sid`) USING BTREE
 ) ENGINE = MyISAM CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
+#Just example for tbl_users
+CREATE TABLE `tbl_users`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `uuid` binary(36) NOT NULL,
+  `username` char(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
+  `password` varchar(50) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
+  `email` char(100) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
+  `mobile` bigint(20) NOT NULL,
+  `created` datetime(0) NOT NULL,
+  `touched` timestamp(0) NOT NULL DEFAULT CURRENT_TIMESTAMP(0) ON UPDATE CURRENT_TIMESTAMP(0),
+  `img` varchar(100) CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
+  `status` enum('pending','block','delete','active') CHARACTER SET utf8 COLLATE utf8_persian_ci NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `fk_unique_mobile`(`mobile`) USING BTREE,
+  UNIQUE INDEX `fk_unique_email`(`email`) USING BTREE,
+  UNIQUE INDEX `fk_unique_username`(`username`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 ```
 
 > you must have a table for your users with column that include usernames
