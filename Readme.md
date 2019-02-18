@@ -36,8 +36,8 @@ CREATE TABLE `tbl_acl_sessions`  (
   PRIMARY KEY (`sid`) USING BTREE
 ) ENGINE = MyISAM CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
 
-#Just example for tbl_users
-CREATE TABLE `tbl_users`  (
+#Just example for tbl_acl_users
+CREATE TABLE `tbl_acl_users`  (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `uuid` binary(36) NOT NULL,
   `username` char(50) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE `tbl_users`  (
 //initialize Properties Object
 $properties = new \RememberMe\Properties();
 $properties->setDb("user","password","db_name","host"); //your database access info
-$properties->setTableUsers("tbl_users"); // table name that you already save your users data
+$properties->setTableUsers("tbl_acl_users"); // table name that you already save your users data
 $properties->setColUsername("username"); // column that save username,email or any id of your users in tbl_users
 ```
 > you need to access this object globally in your project
