@@ -404,8 +404,8 @@ class RememberMe extends ModelAbstract
 
             session_regenerate_id(true);
 
-            unset($_SESSION[$this->properties->getCookie()]);
-            unset($_SESSION[$this->properties->getSessRevalid()]);
+            //unset($_SESSION[$this->properties->getCookie()]);
+            //unset($_SESSION[$this->properties->getSessRevalid()]);
             $_SESSION[$this->properties->getSessAuth()] = 1;
             $_SESSION[$this->properties->getSessPersist()] = 1;
         } catch (\PDOException $e) {
