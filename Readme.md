@@ -1,4 +1,5 @@
-## Remember Me - Session Persistence (In Just 2 Easy Steps!)
+## This project is from 2011, it's here to just remembering old days
+## Remember Me  - Session Persistence (In Just 2 Easy Steps!)
 **users can stay logged in to your website for how long as you want** 
 
 
